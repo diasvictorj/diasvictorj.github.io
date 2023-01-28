@@ -1,49 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Web - João V. Dias</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio Website</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mobile-first.css"
+      media="all"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/78f438c252.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-
-</head>
-<body>
-    <h1>João Victor da Silva Dias</h1>
-    <h2>Indíce:<br>
-       <a href="#aboutme"> Sobre mim </a>-- <a href="#skills"> Habilidades</a> --<a href="#findme">  Mídias Sociais</a>
-      </h2>
-      
-    <img src="photo1.jpg"  alt="Foto de João Victor Dias em uma sessão de gravação de voz" width="400px">
-
-    <h2 id="aboutme">Olá! Eu sou o João! Sou natural de <em>São Paulo/SP</em>, mas sou criado desde sempre na cidade de <em>Sorocaba/SP</em>.<br>
-        Tenho <strong>25 anos</strong> e nas horas vagas (como você já deve ter percebido pela foto) sou músico.</h2>
-
-    <h3 id="skills"><strong>Habilidades:</strong></h3>
-    <p>
+  <body>
+    <!--- Hero Section -->
+    <div id="section1" class="hero">
+      <nav>
+        <h2 class="logo">Portifó<span>lio</span></h2>
         <ul>
-            <li> Conhecimentos em automação e eletrônica</li>
-            <li> Conhecimentos em programação de CLP's</li>
-            <li> Sou <strong>guitarrista</strong> formado em MPB e Jazz <em>(embora metaleiro de alma)</em></li>
-            <li> Sou <strong>cantor</strong> (mas aí só de <strong>rock</strong> e <strong>metal</strong> mesmo :P)</li>
+          <!-- <li><a href="#section1">Home</a></li> -->
+          <li><a href="#section2">Sobre mim</a></li>
+          <li><a href="#section3">Projetos</a></li>
+          <li><a href="#section4">Skills</a></li>
+          <li><a href="#section5">Fale comigo</a></li>
         </ul>
-    </p>
+      </nav>
+      <div class="content">
+        <h4>Hello, meu nome é</h4>
+        <h1><span>J</span>oão <span>D</span>ias</h1>
+        <!-- <h1>João <span>Dias</span></h1> -->
+        <h3><span>W</span>eb Developer <span>& M</span>úsico</h3>
+      </div>
+    </div>
 
-    <h3>Um blog que eu recomendo:</h3>
-    <p>
-        Não sou um cara muito leitor, mas quando bate a vontade, curto ler sobre <em>psicologia</em> e afins. <br>
-        Se liga nesse <a href="https://blog.psicologiaviva.com.br/ " target="_blank" > blog</a> aqui. 
-    </p>
+    <!-- About Section -->
+    <section id="section2" class="about">
+      <div class="main">
+        <img src="img/background1.jpg" />
+        <div class="about-text">
+          <h2><span>S</span>obre mi<span>m</span></h2>
+          <h5>
+            Desenvolvedor <span>Front-end</span>, <span>Back-end</span>, amante
+            da <span>Música</span>
+          </h5>
+          <p>
+            Minha trajetória com tecnologia começou aos 14 anos, no
+            <span>SENAI</span>, onde aprendi tive meu primeiro contato com
+            <span>C#</span>, progamação de microcontroladores, CLP's, e
+            robótica. Durante a pandemia de 2020 retornei aos estudos de
+            progamação, voltando minha atenção para
+            <span>o desenvolvimento WEB</span>, foi onde conheci a
+            <span>TRYBE</span>! Sempre tive uma conexão muito forte com
+            <span>música</span>. Comecei na igreja da minha comunidade, onde
+            eventualmente lecionei em um projeto social da época. Hoje faço
+            música na noite de Sorocaba e Região!
+          </p>
+        </div>
+      </div>
+    </section>
+    <div id="section3" class="service">
+      <div class="title">
+        <h2>Pro<span>j</span>et<span>o</span>s</h2>
+      </div>
+      <div class="box">
+        <div class="card">
+          <i class="fab fa-spotify"></i>
+          <h5>REACT SPOTIFY CLONE</h5>
+          <div class="pra">
+            <p>
+              Projeto Desenvolvido utilizando REACT, porquê algum desses
+              projetos precisava ter música envolvido <span>:P</span>
+            </p>
+            <p style="text-align: center">
+              <a
+                class="button"
+                href="https://github.com/diasvictorj/react-spotify-clone"
+                target="_blank"
+                >Link Repositorio</a
+              >
+            </p>
+          </div>
+        </div>
 
+        <div class="card">
+          <i class="fa-solid fa-truck"></i>
+          <h5>DELIVERY APP</h5>
+          <div class="pra">
+            <p>Projeto Full-Stack, utilizando NODE.JS, React e CSS.</p>
+            <p style="text-align: center">
+              <a
+                class="button"
+                href="https://github.com/diasvictorj/delivery-app"
+                target="_blank"
+                >Link Repositorio</a
+              >
+            </p>
+          </div>
+        </div>
 
+        <div class="card">
+          <i class="fa-solid fa-blog"></i>
+          <h5>BLOGS API</h5>
+          <div class="pra">
+            <p>
+              Texto descrevendo projeto aíTexto descrevendo projeto aíTexto
+              descrevendo projeto aíTexto descrevendo projeto aíTexto
+            </p>
+            <p style="text-align: center">
+              <a
+                class="button"
+                href="https://github.com/diasvictorj/blogs-api"
+                target="_blank"
+                >Link Repositorio</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- SKILLS -->
+    <div id="section4" class="skills-section">
+      <h2>Algumas das Tecnologias que utilizo:</h2>
 
-    <h2 id="findme">Minhas Redes Sociais: </h2>
-    <h3><a href="https://www.linkedin.com/in/diasvictorj/" target="_blank" >Linkedin </a> 
-        <a href="https://www.youtube.com/channel/UCKhmC_rz_5TDlT954QBOs2w/featured" target="_blank" >Youtube</a> 
-        <a href="https://www.instagram.com/diasjaoo/" target="_blank" >Instagram</a> </h3>
+      <div class="skills-icons">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">Bootstrap</a>
+        <a href="#">JavaScript</a>
+        <a href="#">TypeScript</a>
+        <a href="#">React</a>
+        <a href="#">MySQL</a>
+        <a href="#">MongoDb</a>
+        <a href="#">NodeJS</a>
+        <a href="#">Jest</a>
+        <a href="#">AWS</a>
+      </div>
+    </div>
+    <!-- Contact ME -->
 
-
-</body>
+    <div id="section5" class="contact-me">
+      <p>Fale comigo</p>
+      <div class="wpp">
+        <a href="https://wa.me/5515981577790" target="_blank"
+          ><i class="fa fa-whatsapp fa-4x" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <p>João Dias</p>
+      <p>Me siga nas redes sociais!</p>
+      <div class="social">
+        <a href="https://www.facebook.com/joao.v.dias" target="_blank"
+          ><i class="fab fa-facebook-f" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.instagram.com/jdays__/" target="_blank"
+          ><i class="fab fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a href="https://linkedin.com/in/thejoaodias/" target="_blank"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/diasvictorj" target="_blank"
+          ><i class="fa fa-github-square" aria-hidden="true"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
 </html>
